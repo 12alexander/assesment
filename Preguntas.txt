@@ -1,0 +1,127 @@
+1.¿Cuáles son las ceremonias más importantes de un Sprint y 
+  cuál es la idea de cada una?
+
+  * Sprint Planning -> en esta reunión se recojen las historias
+      de usuario para poder dividirlos en entregables, teniendo
+      encuenta su grado de dificultad, costo de tiempo, entre
+      otras cosas conversadas con el equipo, aquí se define el 
+      Spring Backlog, estas reuniones suelen tardar mas de una hora.
+
+  * Daily Scrums -> esta reunión se realiza a diario, para ver
+      el avance del equipo o algun estanque con alguna tarea a
+      entregar.
+  
+  * Sprint Review -> por lo general se realiza esta reunión al
+      finalizar el spring, revisando los items terminados y los
+      que no se llegaron a terminar se asignan al spring que sigue.
+
+  * Retrospectiva -> esta reunión se realiza con el equipo, para
+      revisar unos cambios en los siguientes spring.
+
+2.¿Qué son los Wireframes? Nombra al menos una herramienta que 
+ podamos utilizar.
+
+  wiframes son los prototipos de la pagina web, donde nos permite
+  tener una referencia gráfica de lo que queremos hacer, aqui no 
+  se definen coleres, ni tipografias, ni elementos graficos.
+
+3.Explicar la diferencia entre var, let y const. Y dar un ejemplo 
+  en qué caso se utilizará.
+
+  var, tiene un scope global, mientras que let, tiene scope de bloque
+  vive dentro del bloque que la contiene, const tambien tiene scope de
+  bloque, pero esta no se puede reasignar.
+
+  * var -> function mascota(){
+              var nombre = "Rocky";
+           }
+
+           console.log(nombre);
+  
+    en este ejemplo imprimirá el nombre de la mascota, ya que el scope de
+    var es global;
+  
+  * let -> function mascota(){
+              let nombre = "Rocky";
+           }
+
+           console.log(nombre);
+
+   en este caso saldría error ya que la variable nombre solo vive en la función,
+   por que fue declarada con let que es de scope local o de bloque.
+
+  * const ->  const nombre = "Rocky";
+              nombre = "Puppy";
+
+    en este caso tambien nos daria error ya que una constante no se puede reasignar.
+
+4. ¿Cuáles son los tres comandos que se pueden utilizar para crear una nueva rama llamada rama-1?
+
+    * para crear una rama se puede realizar usando el comando branch o
+      git checkout -b :
+
+        git branch my-branch
+        git checkout -b my-branch
+
+5. Explicar la diferencia entre git merge y git rebase.
+
+    el git merge crea un commit para unir las ramas, sin eliminarlas,
+    el git rebase, reescribe la historia, une los commits en la rama secundaria
+    sin crear un commit nuevo.
+
+6. ¿Cuál es la diferencia entre Pull Request (PR) y el comando git pull?
+  
+    el pull request es una petición al repositorio, en espera de aprovación
+    para ser incorporados al proyecto.
+
+    el git pull, es el comando utilizado para enviar actualizaciones 
+    al repositorio remoto.
+
+7. ¿Qué es el Virtual DOM?
+
+    el virtual DOM, es una representación virtual en memoria del DOM real,
+    este esta entre el DOM y nosotros, con el objetivo, de cambiar secciones
+    especificas y no volver a renderizar el DOM real, ganando así eficiencia.
+
+8.
+    body{
+  margin: 0;
+}
+
+.c-section{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c-section__title{
+  text-align: center;
+  background-color: rgb(31, 31, 31);
+  color: rgb(233, 233, 233);
+  padding: 1.5rem;
+}
+
+.c-services{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.c-services__item{
+  background-color: rgb(238, 238, 238);
+  margin: 1rem;  
+  list-style:none;
+  padding: 1rem;
+  transition: box-shadow 500ms;
+}
+
+.c-services__item:hover{
+  box-shadow: 10px 5px 5px rgb(207, 207, 207);
+}
+
+
+
+
+
+
+  
+
